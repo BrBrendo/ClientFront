@@ -1,0 +1,11 @@
+<div class="card flex justify-content-center">
+    <p-selectButton [options]="paymentOptions" onclick="" [(ngModel)]="value"  optionLabel="name" optionValue="value"></p-selectButton>
+</div>
+
+<div [hidden]="value != 1">
+<app-publish></app-publish>
+</div>
+
+<div [hidden]="value != 2">
+    <app-receiver></app-receiver>
+    </div>
